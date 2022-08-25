@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>Tambah data siswa</h2>
+    </head>
+    <body>
+        <p>Isikan semua data dengan benar, lalu tekan simpan</p>
+        
+        <table width="800">
+            <tr>
+                <td>Nama    : </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Kota Lahir  : </td>
+                <td>
+                    <select> <!--Dropdown-->
+                        <option selected disabled>Pilih kota</option>
+                        <option>Surabaya</option>
+                        <option>Malang</option>
+                        <option>Jakarta</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir : </td>
+                <td>
+                    <input type="date" id="birthday" name="birthday">
+                </td>
+            </tr>
+            <tr>
+                <td>Agama :</td>
+                <td>
+                    <form action=""> <!--FormRadio-->
+                        <input type="Radio" name="agama">
+                        <label>Islam</label>
+                        <input type="Radio" name="agama">
+                        <label>Kristen</label>
+                        <input type="Radio" name="agama">
+                        <label>Katolik</label>
+                        <input type="Radio" name="agama">
+                        <label>Hindu</label>
+                        <input type="Radio" name="agama">
+                        <label>Konghucu</label>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Foto : </td>
+                <td>
+                    <input type="file" id="foto" name="foto" multiple>
+                </td>
+            </tr>
+        </table>
+        <table width=200%">
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+                <td>
+                    <a href="tabelpresensi.html">
+                            <button>Kembali</button>  
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
